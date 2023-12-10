@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/browngrass.png" alt="" id="browngrass">
+        <img src="images/mountain.png" alt="" id="mountain">
+        <img src="images/clouds.png" alt="" id="clouds">
+        <img src="images/mountainclimber.png" alt="" id="climbingman">
+        <p id="title">MOUNTAIN ADVENTURE</p>
+    </div>
+    <div class="section">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dignissimos consequuntur assumenda! Vitae, tempore obcaecati perspiciatis fuga deserunt earum, unde doloribus alias quae dolore eius consequatur velit minus assumenda magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut animi, unde minima error eius expedita id provident eveniet atque cupiditate quis deserunt mollitia optio sed voluptatibus doloremque? Suscipit, dolorum atque.</p>
+    </div>
+
+    <script>
+        let browngrass = document.getElementById('browngrass');
+        let clouds = document.getElementById('clouds');
+        let climbingman = document.getElementById('climbingman');
+        let title = document.getElementById('title');
+
+        window.addEventListener("scroll", ()=>{
+            let scroll = window.pageYOffset;
+
+            browngrass.style.marginTop = scroll * 0.5 + 'px';
+            clouds.style.top = scroll * - 1.5 + 'px'; 
+            climbingman.style.top = scroll * 1.5 + 'px';
+            title.style.marginTop = scroll * 2.5 + 'px';
+        });
+    </script>
+</body>
+</html>

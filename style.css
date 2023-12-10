@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    background-position: center;
+}
+.container #browngrass{
+    position: absolute;
+    z-index: 18;
+}
+.container #clouds{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 14;
+    overflow: hidden;
+ 
+}
+.container #mountain{
+    position: absolute;
+    z-index: 13;
+}
+.container #climbingman{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    z-index: 16;
+    margin-top: 1rem;
+}
+.container p{
+    position: absolute;
+    z-index: 15;
+    font-size: 5rem;
+    font-weight: bold;
+    color:rgb(121, 137, 15);
+}
+.section{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(#3B2F26,#7c6452);
+    padding: 2rem;
+    z-index: 1000;
+    overflow: hidden;
+}
+.section p{
+    color: #fff;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
