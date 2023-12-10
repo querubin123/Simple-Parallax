@@ -33,8 +33,6 @@ body{
     height: 100%;
     width: 100%;
     z-index: 14;
-    overflow: hidden;
- 
 }
 .container #mountain{
     position: absolute;
@@ -44,7 +42,6 @@ body{
     position: absolute;
     height: 200px;
     width: 200px;
-    background-position: center;
     z-index: 16;
     margin-top: 1rem;
 }
